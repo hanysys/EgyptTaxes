@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cars_activity">
+    <EditText
+        android:id="@+id/modelYearId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Model Year"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/ccValueId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter CC"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/dateOfPurchaseId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Date of Purchase"
+        android:onClick="openDatePickerDialog"/>
+
+    <EditText
+        android:id="@+id/dateOfReturnId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Date of Return"
+        android:onClick="openDatePickerDialog"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ok"
+        android:onClick="calculateTaxes"/>
+</LinearLayout>
